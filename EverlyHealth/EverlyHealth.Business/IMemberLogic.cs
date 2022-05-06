@@ -13,5 +13,6 @@ namespace EverlyHealth.Business
         List<Member> GetAllMembers();
         Member GetMember(int id);
         string GetIntroductionPath(int from, int to);
+        void UpdateMember(Member member, string contacts,int id);
     }
 }

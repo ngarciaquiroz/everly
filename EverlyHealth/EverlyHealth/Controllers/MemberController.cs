@@ -54,16 +54,18 @@ namespace EverlyHealth.Controllers
         // GET: MemberController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var member = _memberLogic.GetMember(id);
+            return View(member);
         }
 
         // POST: MemberController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, Member member, string contacts)
         {
             try
             {
+                _memberLogic.UpdateMember(member, contacts, id);
                 return RedirectToAction(nameof(Index));
             }
             catch

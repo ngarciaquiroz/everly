@@ -23,6 +23,12 @@ namespace EverlyHealth.Business
             _searchLogic = searchLogic;
         }
 
+        /**
+         * The add member includes a Member into the in-memory storage
+         * but also calls both the service for the scrapper to get all the h1-h3
+         * and the service to shorten the URL
+         * it also gets all the contacts for the member
+         */
         public void AddMember(Member member, string contacts)
         {
             try
@@ -69,6 +75,13 @@ namespace EverlyHealth.Business
             }
         }
 
+
+        /** 
+         * This functions loops all the contacts from each member 
+         * and goes down on each of it until it founds the node we are looking for
+         * or returns empty
+         * this function is Recursive
+         */
         private string GetPath(Member from, Member to, List<int> visited)
         {
             if (visited.Contains(from.Id))
@@ -107,6 +120,22 @@ namespace EverlyHealth.Business
             return _memberRepository.GetMember(id);
         }
 
+        public void UpdateMember(Member member, string contacts, int id)
+        {
+            member.Id = id;
 
+            if (!String.IsNullOrEmpty(contacts))
+            {
+                var contactIds = contacts.Split(',').Where(a => !String.IsNullOrEmpty(a));
+                member.Contacts = _memberRepository.GetMembersByIds(contactIds.Select(x => int.Parse(x)).ToList());
+            }
+            if (member != null && !String.IsNullOrEmpty(member.Website))
+            {
+                member.Headings = _scrapper.ScrapePage(member.Website);
+                member.ShortenUrl = _tinyUrl.ShortenUrl(member.Website).Result;
+                _searchLogic.AddKeys(member.Headings, member.Id);
+            }
+            _memberRepository.UpdateMember(member); ;
+        }
     }
 }

@@ -22,6 +22,13 @@ namespace EverlyHealth.Services
             _httpClientFactory = httpClientFactory;
             Configuration = configuration;
         }
+
+        /**
+         * This functions makes the call to the tinyUrl API
+         * it uses the app settings configuration to get the TOKEN and URL
+         * 
+         */
+
         public async Task<string?> ShortenUrl(string? url)
         {
             if (String.IsNullOrEmpty(url))
@@ -36,7 +43,7 @@ namespace EverlyHealth.Services
             var requestObject = new TinyUrlRequest(url: url);
             var httpRequestMessage = new HttpRequestMessage(
             HttpMethod.Post,
-            "https://api.tinyurl.com/create")
+            Configuration["ApiTinyUrl"] + "/create")
             {
                 Headers =
             {
