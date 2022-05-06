@@ -8,10 +8,12 @@ namespace EverlyHealth.Controllers
     public class MemberController : Controller
     {
         private readonly IMemberLogic _memberLogic;
+        private readonly ISearchLogic _searchLogic;
 
-        public MemberController(IMemberLogic memberLogic)
+        public MemberController(IMemberLogic memberLogic, ISearchLogic searchLogic)
         {
             _memberLogic = memberLogic;
+            _searchLogic = searchLogic;
         }
 
         // GET: MemberController
@@ -40,7 +42,7 @@ namespace EverlyHealth.Controllers
         {
             try
             {
-                _memberLogic.AddMember(member,contacts);
+                _memberLogic.AddMember(member, contacts);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -70,25 +72,33 @@ namespace EverlyHealth.Controllers
             }
         }
 
-        // GET: MemberController/Delete/5
-        public ActionResult Delete(int id)
+        // GET: MemberController/Search/5
+        public ActionResult Search(int id)
         {
-            return View();
+
+            return View(new Search { Id = id });
         }
 
-        // POST: MemberController/Delete/5
+        // GET: MemberController/Search/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Search(Search search)
         {
-            try
+            var currentMember = _memberLogic.GetMember(search.Id);
+            var response = new Search { Id = search.Id };
+            if (currentMember != null)
             {
-                return RedirectToAction(nameof(Index));
+                var knownContacts = currentMember.Contacts.Select(a => a.Id).ToList();
+                knownContacts.Add(search.Id);
+                var searchResults = _searchLogic.SearchText(search.Query, knownContacts);
+                foreach (var contact in searchResults)
+                {
+                    var path = _memberLogic.GetIntroductionPath(search.Id, searchResults.First().Key);
+                    response.Experts.Add(path, contact.Value);
+
+                }
             }
-            catch
-            {
-                return View();
-            }
+
+            return View(response);
         }
     }
 }

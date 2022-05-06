@@ -9,7 +9,9 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IMemberLogic, MemberLogic>();
 builder.Services.AddScoped<IScrapper, Scrapper>();
 builder.Services.AddScoped<ITinyUrl, TinyUrl>();
+builder.Services.AddScoped<ISearchLogic, SearchLogic>();
 builder.Services.AddSingleton<IMemberRepository, MemberRepository>();
+builder.Services.AddSingleton<ISearchRepository, SearchRepository>();
 
 // Add services to the container.
 builder.Services.AddHttpClient();
