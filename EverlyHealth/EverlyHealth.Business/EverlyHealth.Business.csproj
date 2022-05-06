@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\EverlyHealth.Models\EverlyHealth.Models.csproj" />
     <ProjectReference Include="..\EverlyHealth.Repository\EverlyHealth.Repository.csproj" />
+    <ProjectReference Include="..\EverlyHealth.Services\EverlyHealth.Services.csproj" />
   </ItemGroup>
 
 </Project>
