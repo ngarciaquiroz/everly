@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EverlyHealth.Business", "Ev
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EverlyHealth.Repository", "EverlyHealth.Repository\EverlyHealth.Repository.csproj", "{74D47E46-96CB-4251-A46B-ECE639BA43B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EverlyHealth.Services", "EverlyHealth.Services\EverlyHealth.Services.csproj", "{8E7CDEB5-E717-475D-98E1-F18403033177}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EverlyHealth.Services", "EverlyHealth.Services\EverlyHealth.Services.csproj", "{8E7CDEB5-E717-475D-98E1-F18403033177}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EverlyHealth.Tests", "EverlyHealth.Tests\EverlyHealth.Tests.csproj", "{DB52DAF2-C4D2-4461-B787-301E741D7752}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{8E7CDEB5-E717-475D-98E1-F18403033177}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E7CDEB5-E717-475D-98E1-F18403033177}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E7CDEB5-E717-475D-98E1-F18403033177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB52DAF2-C4D2-4461-B787-301E741D7752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB52DAF2-C4D2-4461-B787-301E741D7752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB52DAF2-C4D2-4461-B787-301E741D7752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB52DAF2-C4D2-4461-B787-301E741D7752}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
