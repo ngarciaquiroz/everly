@@ -1,0 +1,17 @@
+C:\Users\Nicolas Garcia\Documents\code\everly\EverlyHealth\EverlyHealth.Business\bin\Debug\net6.0\EverlyHealth.Business.deps.json
+C:\Users\Nicolas Garcia\Documents\code\everly\EverlyHealth\EverlyHealth.Business\bin\Debug\net6.0\EverlyHealth.Business.dll
+C:\Users\Nicolas Garcia\Documents\code\everly\EverlyHealth\EverlyHealth.Business\bin\Debug\net6.0\ref\EverlyHealth.Business.dll
+C:\Users\Nicolas Garcia\Documents\code\everly\EverlyHealth\EverlyHealth.Business\bin\Debug\net6.0\EverlyHealth.Business.pdb
+C:\Users\Nicolas Garcia\Documents\code\everly\EverlyHealth\EverlyHealth.Business\bin\Debug\net6.0\EverlyHealth.Models.dll
+C:\Users\Nicolas Garcia\Documents\code\everly\EverlyHealth\EverlyHealth.Business\bin\Debug\net6.0\EverlyHealth.Repository.dll
+C:\Users\Nicolas Garcia\Documents\code\everly\EverlyHealth\EverlyHealth.Business\bin\Debug\net6.0\EverlyHealth.Models.pdb
+C:\Users\Nicolas Garcia\Documents\code\everly\EverlyHealth\EverlyHealth.Business\bin\Debug\net6.0\EverlyHealth.Repository.pdb
+C:\Users\Nicolas Garcia\Documents\code\everly\EverlyHealth\EverlyHealth.Business\obj\Debug\net6.0\EverlyHealth.Business.csproj.AssemblyReference.cache
+C:\Users\Nicolas Garcia\Documents\code\everly\EverlyHealth\EverlyHealth.Business\obj\Debug\net6.0\EverlyHealth.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nicolas Garcia\Documents\code\everly\EverlyHealth\EverlyHealth.Business\obj\Debug\net6.0\EverlyHealth.Business.AssemblyInfoInputs.cache
+C:\Users\Nicolas Garcia\Documents\code\everly\EverlyHealth\EverlyHealth.Business\obj\Debug\net6.0\EverlyHealth.Business.AssemblyInfo.cs
+C:\Users\Nicolas Garcia\Documents\code\everly\EverlyHealth\EverlyHealth.Business\obj\Debug\net6.0\EverlyHealth.Business.csproj.CoreCompileInputs.cache
+C:\Users\Nicolas Garcia\Documents\code\everly\EverlyHealth\EverlyHealth.Business\obj\Debug\net6.0\EverlyHealth.Business.csproj.CopyComplete
+C:\Users\Nicolas Garcia\Documents\code\everly\EverlyHealth\EverlyHealth.Business\obj\Debug\net6.0\EverlyHealth.Business.dll
+C:\Users\Nicolas Garcia\Documents\code\everly\EverlyHealth\EverlyHealth.Business\obj\Debug\net6.0\ref\EverlyHealth.Business.dll
+C:\Users\Nicolas Garcia\Documents\code\everly\EverlyHealth\EverlyHealth.Business\obj\Debug\net6.0\EverlyHealth.Business.pdb

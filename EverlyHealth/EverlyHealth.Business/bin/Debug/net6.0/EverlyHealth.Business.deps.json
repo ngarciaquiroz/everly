@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "EverlyHealth.Business/1.0.0": {
+        "dependencies": {
+          "EverlyHealth.Models": "1.0.0",
+          "EverlyHealth.Repository": "1.0.0"
+        },
+        "runtime": {
+          "EverlyHealth.Business.dll": {}
+        }
+      },
+      "EverlyHealth.Models/1.0.0": {
+        "runtime": {
+          "EverlyHealth.Models.dll": {}
+        }
+      },
+      "EverlyHealth.Repository/1.0.0": {
+        "dependencies": {
+          "EverlyHealth.Models": "1.0.0"
+        },
+        "runtime": {
+          "EverlyHealth.Repository.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EverlyHealth.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EverlyHealth.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EverlyHealth.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Nicolas Garcia\\Documents\\code\\everly\\EverlyHealth\\EverlyHealth.Business\\EverlyHealth.Business.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Nicolas Garcia\\Documents\\code\\everly\\EverlyHealth\\EverlyHealth.Business\\EverlyHealth.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nicolas Garcia\\Documents\\code\\everly\\EverlyHealth\\EverlyHealth.Business\\EverlyHealth.Business.csproj",
+        "projectName": "EverlyHealth.Business",
+        "projectPath": "C:\\Users\\Nicolas Garcia\\Documents\\code\\everly\\EverlyHealth\\EverlyHealth.Business\\EverlyHealth.Business.csproj",
+        "packagesPath": "C:\\Users\\Nicolas Garcia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nicolas Garcia\\Documents\\code\\everly\\EverlyHealth\\EverlyHealth.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Nicolas Garcia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Nicolas Garcia\\Documents\\code\\everly\\EverlyHealth\\EverlyHealth.Models\\EverlyHealth.Models.csproj": {
+                "projectPath": "C:\\Users\\Nicolas Garcia\\Documents\\code\\everly\\EverlyHealth\\EverlyHealth.Models\\EverlyHealth.Models.csproj"
+              },
+              "C:\\Users\\Nicolas Garcia\\Documents\\code\\everly\\EverlyHealth\\EverlyHealth.Repository\\EverlyHealth.Repository.csproj": {
+                "projectPath": "C:\\Users\\Nicolas Garcia\\Documents\\code\\everly\\EverlyHealth\\EverlyHealth.Repository\\EverlyHealth.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Nicolas Garcia\\Documents\\code\\everly\\EverlyHealth\\EverlyHealth.Models\\EverlyHealth.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nicolas Garcia\\Documents\\code\\everly\\EverlyHealth\\EverlyHealth.Models\\EverlyHealth.Models.csproj",
+        "projectName": "EverlyHealth.Models",
+        "projectPath": "C:\\Users\\Nicolas Garcia\\Documents\\code\\everly\\EverlyHealth\\EverlyHealth.Models\\EverlyHealth.Models.csproj",
+        "packagesPath": "C:\\Users\\Nicolas Garcia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nicolas Garcia\\Documents\\code\\everly\\EverlyHealth\\EverlyHealth.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Nicolas Garcia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Nicolas Garcia\\Documents\\code\\everly\\EverlyHealth\\EverlyHealth.Repository\\EverlyHealth.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nicolas Garcia\\Documents\\code\\everly\\EverlyHealth\\EverlyHealth.Repository\\EverlyHealth.Repository.csproj",
+        "projectName": "EverlyHealth.Repository",
+        "projectPath": "C:\\Users\\Nicolas Garcia\\Documents\\code\\everly\\EverlyHealth\\EverlyHealth.Repository\\EverlyHealth.Repository.csproj",
+        "packagesPath": "C:\\Users\\Nicolas Garcia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nicolas Garcia\\Documents\\code\\everly\\EverlyHealth\\EverlyHealth.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Nicolas Garcia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Nicolas Garcia\\Documents\\code\\everly\\EverlyHealth\\EverlyHealth.Models\\EverlyHealth.Models.csproj": {
+                "projectPath": "C:\\Users\\Nicolas Garcia\\Documents\\code\\everly\\EverlyHealth\\EverlyHealth.Models\\EverlyHealth.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
