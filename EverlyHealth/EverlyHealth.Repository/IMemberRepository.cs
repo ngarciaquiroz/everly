@@ -12,5 +12,6 @@ namespace EverlyHealth.Repository
         void addMember(Member member);
         HashSet<Member> GetMembersByIds(List<int> membersId);
         List<Member> GetAllMembers();
+        Member GetMember(int id);
     }
 }

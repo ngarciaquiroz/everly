@@ -15,10 +15,11 @@ namespace EverlyHealth.Models
             Headings = new List<String>();
         }
 
-        public Member(string name, string website)
+        public Member(string name, string website, string shortenUrl)
         {
             Name = name;
             Website = website;
+            ShortenUrl = shortenUrl;
             Contacts = new HashSet<Member>();
             Headings = new List<String>();
         }
@@ -27,6 +28,8 @@ namespace EverlyHealth.Models
         public string Website { get; set; }
         public HashSet<Member> Contacts { get; set; }
         public List<String> Headings { get; set; }
+        public string ShortenUrl { get; set; }
+
 
         public bool Equals(Member other)
         {

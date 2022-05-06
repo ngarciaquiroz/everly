@@ -11,5 +11,6 @@ namespace EverlyHealth.Business
     {
         void AddMember(Member member, string contacts);
         List<Member> GetAllMembers();
+        Member GetMember(int id);
     }
 }
