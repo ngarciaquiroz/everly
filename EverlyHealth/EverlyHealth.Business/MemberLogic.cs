@@ -13,10 +13,12 @@ namespace EverlyHealth.Business
     {
         private readonly IMemberRepository _memberRepository;
         private readonly IScrapper _scrapper;
-        public MemberLogic(IMemberRepository memberRepository, IScrapper scrapper)
+        private readonly ITinyUrl _tinyUrl;
+        public MemberLogic(IMemberRepository memberRepository, IScrapper scrapper, ITinyUrl tinyUrl)
         {
             _memberRepository = memberRepository;
             _scrapper = scrapper;
+            _tinyUrl = tinyUrl;
         }
 
         public void AddMember(Member member, string contacts)
@@ -26,7 +28,7 @@ namespace EverlyHealth.Business
                 if (member != null && !String.IsNullOrEmpty(member.Website))
                 {
                     member.Headings = _scrapper.ScrapePage(member.Website);
-
+                    member.Website = _tinyUrl.ShortenUrl(member.Website).Result;
                 }
                 if (!String.IsNullOrEmpty(contacts))
                 {
