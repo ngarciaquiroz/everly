@@ -5,11 +5,13 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EverlyHealth", "EverlyHealth\EverlyHealth.csproj", "{77D6DDEF-CC70-461F-BE8E-EC826604090C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EverlyHealth.Models", "EverlyHealth.Models\EverlyHealth.Models.csproj", "{F53DAF39-4B93-4DED-97DA-6056D4825371}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EverlyHealth.Models", "EverlyHealth.Models\EverlyHealth.Models.csproj", "{F53DAF39-4B93-4DED-97DA-6056D4825371}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EverlyHealth.Business", "EverlyHealth.Business\EverlyHealth.Business.csproj", "{628C5398-EB5E-4056-AB5F-FB0E9C90D200}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EverlyHealth.Business", "EverlyHealth.Business\EverlyHealth.Business.csproj", "{628C5398-EB5E-4056-AB5F-FB0E9C90D200}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EverlyHealth.Repository", "EverlyHealth.Repository\EverlyHealth.Repository.csproj", "{74D47E46-96CB-4251-A46B-ECE639BA43B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EverlyHealth.Repository", "EverlyHealth.Repository\EverlyHealth.Repository.csproj", "{74D47E46-96CB-4251-A46B-ECE639BA43B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EverlyHealth.Services", "EverlyHealth.Services\EverlyHealth.Services.csproj", "{8E7CDEB5-E717-475D-98E1-F18403033177}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{74D47E46-96CB-4251-A46B-ECE639BA43B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74D47E46-96CB-4251-A46B-ECE639BA43B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74D47E46-96CB-4251-A46B-ECE639BA43B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E7CDEB5-E717-475D-98E1-F18403033177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E7CDEB5-E717-475D-98E1-F18403033177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E7CDEB5-E717-475D-98E1-F18403033177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E7CDEB5-E717-475D-98E1-F18403033177}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
