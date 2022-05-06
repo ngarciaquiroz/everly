@@ -20,10 +20,11 @@ namespace EverlyHealth.Controllers
             return View(_memberLogic.GetAllMembers());
         }
 
-        // GET: MemberController/Details/5
-        public ActionResult Details(int id)
+        // GET: MemberController/View/5
+        public ActionResult View(int id)
         {
-            return View();
+            var member = _memberLogic.GetMember(id);
+            return View(member);
         }
 
         // GET: MemberController/Add

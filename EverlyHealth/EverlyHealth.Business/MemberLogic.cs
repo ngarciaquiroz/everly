@@ -28,7 +28,7 @@ namespace EverlyHealth.Business
                 if (member != null && !String.IsNullOrEmpty(member.Website))
                 {
                     member.Headings = _scrapper.ScrapePage(member.Website);
-                    member.Website = _tinyUrl.ShortenUrl(member.Website).Result;
+                    member.ShortenUrl = _tinyUrl.ShortenUrl(member.Website).Result;
                 }
                 if (!String.IsNullOrEmpty(contacts))
                 {
@@ -48,6 +48,11 @@ namespace EverlyHealth.Business
         public List<Member> GetAllMembers()
         {
             return _memberRepository.GetAllMembers();
+        }
+
+        public Member GetMember(int id)
+        {
+            return _memberRepository.GetMember(id);
         }
     }
 }

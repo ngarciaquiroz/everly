@@ -44,5 +44,10 @@ namespace EverlyHealth.Repository
         {
             return _members.Values.ToList();
         }
+
+        public Member GetMember(int id)
+        {
+            return _members.GetValueOrDefault(id);
+        }
     }
 }
