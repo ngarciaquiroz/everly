@@ -1,0 +1,41 @@
+﻿@model EverlyHealth.Models.Search
+
+@{
+    ViewData["Title"] = "Search";
+}
+
+<h1>Search</h1>
+
+<h4>Member</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Search">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Query" class="control-label"></label>
+                <input asp-for="Query" class="form-control" />
+                <span asp-validation-for="Query" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+        @{
+            <ul>
+                @foreach (var item in Model.Experts)
+                {
+
+                    <li> Path:@Html.DisplayFor(modelItem => item.Key) | Match: @Html.DisplayFor(modelItem => item.Value)</li>
+
+                }
+
+            </ul>
+        }
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
