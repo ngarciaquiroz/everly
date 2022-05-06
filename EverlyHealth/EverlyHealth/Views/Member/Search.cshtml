@@ -22,13 +22,13 @@
                 <input type="submit" value="Search" class="btn btn-primary" />
             </div>
         </form>
-        @{
+    </div>
+    <div>
+         @{
             <ul>
                 @foreach (var item in Model.Experts)
                 {
-
                     <li> Path:@Html.DisplayFor(modelItem => item.Key) | Match: @Html.DisplayFor(modelItem => item.Value)</li>
-
                 }
 
             </ul>

@@ -92,7 +92,7 @@ namespace EverlyHealth.Controllers
                 var searchResults = _searchLogic.SearchText(search.Query, knownContacts);
                 foreach (var contact in searchResults)
                 {
-                    var path = _memberLogic.GetIntroductionPath(search.Id, searchResults.First().Key);
+                    var path = _memberLogic.GetIntroductionPath(search.Id, contact.Key);
                     response.Experts.Add(path, contact.Value);
 
                 }

@@ -11,7 +11,7 @@ namespace EverlyHealth.Repository
     {
         private Dictionary<int, Member> _members = new Dictionary<int, Member>();
 
-        public void addMember(Member member)
+        public Member addMember(Member member)
         {
             member.Id = _members.Count;
 
@@ -23,7 +23,8 @@ namespace EverlyHealth.Repository
                     _members[contact.Id].Contacts.Add(member);
                 }
             }
-            _members[member.Id] = member;          
+            _members[member.Id] = member;       
+            return member;
         }
 
         public HashSet<Member> GetMembersByIds(List<int> membersId)
